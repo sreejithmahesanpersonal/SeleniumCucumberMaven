@@ -14,7 +14,7 @@ public class ExtentReportingUtility {
     ExtentSparkReporter spark = null;
     ExtentTest test;
     private static ExtentReportingUtility extent_Report;
-    public static ExtentReportingUtility getExtent_report() {
+    public static ExtentReportingUtility getExtent_report_Instance() {
         if(extent_Report == null)
             return extent_Report = new ExtentReportingUtility();
         else

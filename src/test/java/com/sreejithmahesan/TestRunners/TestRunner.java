@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features={"src/test/java/com/sreejithmahesan/Features/"},
-        tags = "@Smoke",
+        tags = "@Smoke1 or @Smoke3 and not @Smoke2",
         plugin = {"pretty", "html:target/TestReports/cucumber-html-report.html", "json:target/TestReports/cucumber-report.json","junit:target/TestReports/cucumber-junit.xml"},
         glue = {"com.sreejithmahesan.StepDefinitions"}
 )

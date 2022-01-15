@@ -22,7 +22,7 @@ public class FirstFeatureSteps extends AutomationCommon {
         driver.manage().window().maximize();
         Thread.sleep(10000);
         home_page = new HomePage(driver);
-        extentReportingUtility = ExtentReportingUtility.getExtent_report();
+        extentReportingUtility = ExtentReportingUtility.getExtent_report_Instance();
     }
 
 
