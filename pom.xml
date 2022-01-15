@@ -61,6 +61,12 @@
       <artifactId>cobertura</artifactId>
       <version>${cobertura-Version}</version>
       <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>com.sun</groupId>
+          <artifactId>tools</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
     <dependency>
@@ -87,7 +93,12 @@
       <artifactId>selenium-java</artifactId>
       <version>${selenium-java-version}</version>
     </dependency>
-
+    <!-- https://mvnrepository.com/artifact/tech.grasshopper/extent-pdf-report -->
+    <dependency>
+      <groupId>tech.grasshopper</groupId>
+      <artifactId>extent-pdf-report</artifactId>
+      <version>1.8.0</version>
+    </dependency>
   </dependencies>
 
   <build>
