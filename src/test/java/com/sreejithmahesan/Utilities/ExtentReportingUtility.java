@@ -24,7 +24,7 @@ public class ExtentReportingUtility {
     ExtentReportingUtility()
     {
         extent = new ExtentReports();
-        spark = new ExtentSparkReporter("target//TestReports//Spark.html");
+        spark = new ExtentSparkReporter("target//TestReports//Cucumber_Extent_Report.html");
     }
 
     public void CreateExtentTest(String testName)

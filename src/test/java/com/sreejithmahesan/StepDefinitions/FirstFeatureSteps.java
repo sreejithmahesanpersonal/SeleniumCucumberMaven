@@ -20,7 +20,7 @@ public class FirstFeatureSteps extends AutomationCommon {
         driver = WebdriverSetup();
         driver.get("https://www.facebook.com");
         driver.manage().window().maximize();
-        Thread.sleep(10000);
+        Thread.sleep(5000);
         home_page = new HomePage(driver);
         extentReportingUtility = ExtentReportingUtility.getExtent_report_Instance();
     }

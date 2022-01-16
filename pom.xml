@@ -129,6 +129,10 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
+          <configuration>
+            <parallel>classesAndMethods</parallel>
+            <useUnlimitedThreads>true</useUnlimitedThreads>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
